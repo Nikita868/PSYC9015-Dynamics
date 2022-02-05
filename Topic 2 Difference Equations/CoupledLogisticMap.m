@@ -27,6 +27,7 @@ function [xt1 xt2] = CoupledLogisticMap(X_in, R, a, iterations, animation_speed)
 %
 %   Model by Vallacher & Nowak, et al., (1998; 2002; 2005)
 %   for Synchonized Social Interaction
+%   Model described in Vallacher, R. R., Nowak, A., & Zochowski, M. (2005). Dynamics of social coordination: The synchronization of internal states in close relationships. Interaction Studies, 6(1), 35-52.
 %**************************************************************************
 %**************************************************************************
 
