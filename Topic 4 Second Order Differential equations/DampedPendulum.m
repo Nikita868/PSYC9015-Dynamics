@@ -34,8 +34,8 @@ title('Phase diagram of Lotka Volterra Equation with vector field');
 
 % calculate vector field
 [x,y] = meshgrid(xrange(1):.1:xrange(2),yrange(1):.1:yrange(2));
-u = a.*x - b.*x.*y - m.*x.^2;
-v = c.*x.*y-e.*y-n.*y.^2;
+u = a.*x - b.*x.*y - m.*x.^2; % update the equation 1 here!!!!
+v = c.*x.*y-e.*y-n.*y.^2;   % update the equation 2 here!!!!
 
 quiver(x,y,u,v,1,'k','MaxHeadSize',2)
 
