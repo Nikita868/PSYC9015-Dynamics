@@ -6,7 +6,7 @@ function [t,x] = Rayleigh(x0,y0,u,stime)
 %  [t,x] = Rayleigh([-2 -.1 .1 1],[-2 0 2],.5,15);
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-close all;
+% close all;
 
 H_INC = .02; %Sample increment (e.g., 0.02 = 50 "Hz")
 t0 = H_INC; %start time
@@ -64,7 +64,7 @@ function dxdt = Rayleigh_ODE(t,x,u)
 %One line for each state:
 dxdt = [ 
         x(2)
-        -x(1)+u*(1-x(2)^2)*x(2)
+        -x(1)-u*(1-x(2)^2)*x(2)
 ];
 
 return;
