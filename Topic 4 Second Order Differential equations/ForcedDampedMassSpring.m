@@ -6,7 +6,7 @@ function [t,x] = ForcedDampedMassSpring(x0,v0,b,k,beta,fw,stime,plotflag)
 %  [t x] = ForcedDampedMassSpring(-.5,0,.5,2*pi,1,2*pi,20,1);
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-close all;
+% close all;
 
 m = 1; % mass equal to 1
 
@@ -42,14 +42,13 @@ options = odeset('InitialStep',H_INC,'MaxStep',H_INC,'RelTol',realmax,'AbsTol',[
 close all;
 if (plotflag == 1)
     figure;
-    grid on
     xlabel('x');
     ylabel('dxdt');
     xlim([min(x(:,1))-.5 max(x(:,1))+.5]);
     ylim([min(x(:,2))-.5 max(x(:,2))+.5]);
     hold on
     for i=2:length(x)
-        plot(x(i-1:i,1), x(i-1:i,2),'b');
+        plot(x(i-1:i,1), x(i-1:i,2));
         pause(.01);
     end
     hold off;
@@ -60,7 +59,9 @@ if (plotflag == 1)
     xlim([0 stime])
     ylim([min(x(:,1))-.5 max(x(:,1))+.5]);
     plot(t(:,1), x(:,1), '-b');
-    endf
+    xlabel('Time (s)')
+    ylabel('Position')
+end
 
 
 hold off;
