@@ -6,7 +6,7 @@ function [t,x] = ForcedDuffing(x0,v0,b,eps,k,beta,fw,stime,plotflag)
 %  [t x] = ForcedDuffing(-.5,0,.5,1,2*pi,1,2*pi,20,1);
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-close all;
+% close all;
 
 m = 1; % mass equal to 1
 
