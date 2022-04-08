@@ -75,7 +75,7 @@ if (plotflag == 1)
     ylabel('Osc/Limb 2');
     title('HKB - 4th Order Approx ');
     for i=2:length(x)
-        plot(x(i-1:i,1), x(i-1:i,3));
+        plot(x(i-1:i,1), x(i-1:i,3),'b');
         pause(.01);
     end
     hold off;
@@ -89,7 +89,7 @@ if (plotflag == 1)
     title('HKB - 4th Order Approx');
     hold off;
     
-end;
+end
 
 return;
 
