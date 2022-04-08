@@ -7,7 +7,7 @@ function [t x] = VanDerPol(x0,y0,u,stime)
 %  [t x] = VanDerPol([-3],[-3],.5,10);
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-close all;
+% close all;
 
 H_INC = .02; %Sample increment (e.g., 0.02 = 50 "Hz")
 t0 = H_INC; %start time
