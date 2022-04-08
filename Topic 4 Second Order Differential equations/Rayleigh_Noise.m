@@ -7,7 +7,7 @@ function [t,x] = Rayleigh_Noise(x0,v0,u,q,stime)
 %  [t,x] = Rayleigh_Noise(-.1,0,.6,.1,30);
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-close all;
+% close all;
 
 H_INC = .04; %Sample increment (e.g., 0.02 = 50 "Hz")
 t0 = H_INC; %start time
