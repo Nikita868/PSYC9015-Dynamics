@@ -1,4 +1,4 @@
-function IntMyODE_HKB(x0,a,stime)
+function IntMyODE_sin(x0,a,stime)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % function IntMyODE_sin(x0,a, stime)
 %
@@ -18,7 +18,7 @@ tspan=H_INC:H_INC:stime; % time-vector
 
 %Integrate:
 options = odeset('InitialStep',H_INC,'MaxStep',H_INC,'RelTol',realmax,'AbsTol',realmax);
-[t, x] = ode45(@MyODE_Function,tspan,x0,options,a,b);
+[t, x] = ode45(@MyODE_Function,tspan,x0,options,a);
 
 % close all;
 
@@ -36,7 +36,7 @@ return;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function dxdt = MyODE_Function(t, x, a)
 
-dxdt = -a*sin(x) - 2*b*sin(2*x);
+dxdt = 2*sin(x);
 
 return;
 %//////////////////////////////////////////////////////////////////////////
